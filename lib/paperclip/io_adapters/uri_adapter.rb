@@ -14,7 +14,7 @@ module Paperclip
     private
 
     def download_content
-      open(@target)
+      open(@target, 'User-Agent' => 'Mozilla/5.0')
     end
 
     def cache_current_values
